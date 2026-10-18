@@ -13,14 +13,14 @@ function closeModal() {
 openRegister.addEventListener("click", openModal);
 closeRegister.addEventListener("click", closeModal);
 
-// Click on the blurred background to close
+// for the blurred background
 registerModal.addEventListener("click", function (event) {
     if (event.target === registerModal) {
         closeModal();
     }
 });
 
-// Press Escape to close
+// esc to close
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         closeModal();
