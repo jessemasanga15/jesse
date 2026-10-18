@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbarara University of Science and Technology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <h1 class="title">Mbarara University of Science and Technology</h1>
+  <body>
+    <div class="login">
+      
+      <p>Hello and Welcome, Please Enter your credentials</p>
+
+      <form action="" method="post">
+        <label for="email_address">Email Address</label>
+        <input type="email" id="email_address" name="email_address" placeholder="name@mail.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+        <button type="submit">Sign In</button>
+
+      </form>
+
+      <div class="create-account">
+        <p>Are you new here?</p>
+        <button type="button" id="openRegister">Create Account</button>
+        <p class = "footer" >MUST Application System | Welcome.</p>
+      </div>
+      
+    </div>
+
+    
+    <div class="modal-overlay" id="registerModal">
+      <div class="register-window">
+        <button type="button" class="close-modal" id="closeRegister" aria-label="Close">&times;</button>
+
+        <h2>Create Account</h2>
+        <p>Enter your details below.</p>
+
+        <form id="registerForm">
+          <label for="full_name">Surname</label>
+          <input type="text" id="full_name" name="full_name" placeholder="Enter your surname" required>
+
+          <label for="other_name">Other Name</label>
+          <input type="text" id="other_name" name="other_name" placeholder="Enter your other name(s)" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+
+          <label for="register_email">Email Address</label>
+          <input type="email" id="register_email" name="register_email" placeholder="name@mail.com" required>
+
+          <button type="submit" class="register-submit">Create Account</button>
+        </form>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
